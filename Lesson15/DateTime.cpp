@@ -22,3 +22,22 @@ bool LaterInYear(int m1, int d1, int m2, int d2)
 	else return (d1 > d2);
 }
 
+int DaysInYear(int y)
+{
+	if (IsLeapYear(y))
+		return 366;
+	return 365;
+}
+
+int DaysInYearRange(int y1, int y2)
+{
+	int sum = 0;
+	for (int i = y1; i <= y2; i++)
+		sum += DaysInYear(i);
+	return sum;
+}
+
+int SeconsInHours(int h)
+{
+	return h * 3600;
+}
