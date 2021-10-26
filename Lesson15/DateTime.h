@@ -1,15 +1,4 @@
 #pragma once
 
-bool IsLeapYear(int year)
-{
-	if (year % 4 == 0)
-	{
-		if (year % 100 == 0)
-		{
-			if (year % 400 != 0)
-				return false;
-		}
-		return true;
-	}
-	return false;
-}
+bool IsLeapYear(int year);
+int SecondsInMinute(int min);
