@@ -1,4 +1,3 @@
-#include "DateTime.h"
 
 bool IsLeapYear(int year)
 {
@@ -12,9 +11,4 @@ bool IsLeapYear(int year)
 		return true;
 	}
 	return false;
-}
-
-int SecondsInMinute(int min)
-{
-	return min * 60;
 }
